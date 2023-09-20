@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap");
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background: #2d2d2d;
+    color: #f1f1f1;
+}
+
+nav > * {
+    padding: 0 20px;
+}
+
+nav h1 {
+    font-size: 30px;
+}
+
+nav .onglets {
+    margin-top: 35px;
+}
+
+a {
+    position: relative;
+    text-decoration: none;
+    color: black;
+}
+
+a span {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 1px;
+    background-color: black;
+    transition: width .2s;
+    transform: translateX(-50%);
+}
+
+a:hover span {
+    width: 100%;
+}
+
+nav .onglets a {
+    margin-right: 10px;
+    color: inherit;
+}
+
+.articles {
+    margin-top: 30px;
+}
+
+.articles .article {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+.articles .article .left img {
+    height: 300px;
+    width: 500px;
+}
+
+.articles .article .right {
+    max-width: 50%;
+    margin-left: 40px;
+}
+
+.articles .article .right p.date {
+    color: #7f7e7e;
+}
+
+.articles .article .right p.description {
+    color: #2d2d2d;
+}
