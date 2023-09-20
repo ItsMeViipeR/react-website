@@ -5,6 +5,9 @@ interface Props {
     name: string;
 }
 
+let date: number = 2023;
+let since: string = date === new Date().getFullYear() ? date.toString() : `${date} - ${new Date().getFullYear()}`;
+
 class Footer extends Component<Props> {
     render() {
         return (
@@ -29,13 +32,13 @@ class Footer extends Component<Props> {
                             <li><a href="#">My projects</a></li>
                         </ul>
                         <ul className="box">
-                            <li className="link_name">Services</li>
+                            <li className="link_name">My skills</li>
                             <li><a href="#">Web conception</a></li>
                             <li><a href="#">Desktop app creation</a></li>
                             <li><a href="#">Code review</a></li>
                         </ul>
                         <ul className="box">
-                            <li className="link_name">Help by me</li>
+                            <li className="link_name">Technologies that I can use</li>
                             <li><a href="#">HTML & CSS</a></li>
                             <li><a href="#">JavaScript</a></li>
                             <li><a href="#">Rust</a></li>
@@ -45,7 +48,7 @@ class Footer extends Component<Props> {
                 </div>
                 <div className="bottom-details">
                     <div className="bottom_text">
-                        <span className="copyright_text">Copyright © 2021 <a href="#">{this.props.name}.</a>All rights reserved</span>
+                        <span className="copyright_text">Copyright © {since} <a href="#">{this.props.name}.</a>All rights reserved</span>
                         <span className="policy_terms">
                             <a href="#">Privacy policy</a>
                             <a href="#">Terms & condition</a>

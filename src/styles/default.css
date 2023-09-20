@@ -1,0 +1,11 @@
+.page-content {
+    text-align: center;
+}
+
+.page-content h1 {
+    text-decoration: underline;
+}
+
+.page-content * {
+    padding: 0 calc(15% / 1.5);
+}
