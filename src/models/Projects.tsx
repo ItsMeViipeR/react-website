@@ -8,7 +8,7 @@ import Footer from "../components/Footer";
 
 const NAME: string = "ViipeR";
 
-function Home() {
+function Projects() {
     return (
         <div className="App">
             <header>
@@ -17,7 +17,7 @@ function Home() {
 
             <main>
                 <div className="page-content">
-                    <h1>Home</h1>
+                    <h1>Test</h1>
                 </div>
             </main>
 
@@ -28,4 +28,4 @@ function Home() {
     );
 }
 
-export default Home;
+export default Projects;
